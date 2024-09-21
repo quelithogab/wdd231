@@ -1,0 +1,118 @@
+/* Small Screen Styles (Mobile) */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  header {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .profile {
+    display: flex;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .profile img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+
+  .profile button {
+    cursor: pointer;
+  }
+
+   /* Menu Toggle Button (Hamburger Icon) */
+   .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    /* position: absolute; */
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .menu-toggle .close {
+    display: none;
+  }
+
+  /* Hide the nav menu initially */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+   /* Make sure each list item takes full width */
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Display the menu when 'open' class is added */
+  nav.open ul {
+    display: block;
+  }
+
+  /* Show the 'close' icon when menu is open */
+  .menu-toggle.open .hamburger {
+    display: none;
+  }
+
+  .menu-toggle.open .close {
+    display: inline;
+  }
+
+
+  main {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card img {
+   width: 250px;
+   height: auto;
+   margin: 0 auto;
+   display: block;
+  }
+
+  .card1 {
+    width: 100%;
+  }
+
+  .courseName {
+    flex-direction: row;
+  }
+
+  button {
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .courseList {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .course-item {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+}

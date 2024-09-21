@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 - Web Frontend Development- Quelitho Gabriel</title>
+  <meta name="description" content="WDD 231 - Web Frontend Development I">
+  <meta name="author" content="Quelitho Gabriel">
+  <!-- Google Font preconnect links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/home-large.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 -- Quelitho Gabriel</h1>
+  <header>
+    <div class="profile">
+        <img src="images/profile.jpeg" alt="Quelitho Gabriel">
+        <h1>Quelitho Gabriel</h1>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="hamburger">&#9776;</span>
+          <span class="close">&times;</span>
+        </button>
+    </div> 
+    
+    <nav>
+      <ul>
+        <li><a href="#" target="_blank">Home</a></li>
+        <li><a href="#" target="_blank">Chamber</a></li>
+        <li> <a href="#" target="_blank">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/quelitho-gabriel-108018223/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Course Work</h2>
+      <div class="about-me">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <section class="card">
+      <h2>P-Au-P Haiti</h2>
+      <img src="images/haiti.jpg" alt="Haiti">
+    </section>
+
+    <section class="card1">
+      <h2>Web and Computer Programming Certificate</h2>
+    
+      <div class="courseName">
+        <button onclick="filterCourses('All')">All</button>
+        <button onclick="filterCourses('CSE')">CSE</button>
+        <button onclick="filterCourses('WDD')">WDD</button>
+      </div>
+    
+      <!-- List of Courses -->
+      <div id="courseList" class="courseList">
+        <h3 class="course-item" id="cse110" onclick="showCourseDetails('CSE110')">CSE 110g</h3>
+        <h3 class="course-item" id="wdd130" onclick="showCourseDetails('WDD130')">WDD 130</h3>
+        <h3 class="course-item" id="cse111" onclick="showCourseDetails('CSE111')">CSE 111</h3>
+        <h3 class="course-item" id="cse210" onclick="showCourseDetails('CSE210')">CSE 210</h3>
+        <h3 class="course-item" id="wdd131" onclick="showCourseDetails('WDD131')">WDD 131</h3>
+        <h3 class="course-item" id="wdd231" onclick="showCourseDetails('WDD231')">WDD 231</h3>
+      </div>
+    
+      <!-- Placeholder for displaying course details -->
+      <div id="courseDetails" class="course-details"></div>
+    
+      <!-- Display total completed credits -->
+      <!-- Placeholder for displaying total credits required -->
+      <h3 id="totalCreditsRequired"></h3>
+    </section>
+    
+    
+    
+  </main>
+  
+  <footer>
+    <p>&copy; <span id="currentyear"></span> ⚽ Quelitho Gabriel  ⚽ Haiti  ✔</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
