@@ -19,6 +19,19 @@
         }
     });
     
+    // JavaScript to dynamically highlight the current navigation item
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentPage = window.location.pathname; // Get the current page URL
+        const navLinks = document.querySelectorAll('nav a');
+    
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active'); // Add 'active' class to the current page link
+            }
+        });
+    });
+  
+    
 
     const courses = [
         {
@@ -138,29 +151,28 @@ function showCourseDetails(course) {
     `;
 }
 
-// Function to filter courses by subject
-function filterCourses(subject) {
-    let filteredCourses;
+    // Function to filter courses by subject and display total credits
+    function filterCourses(subject) {
 
-    if (subject === 'All') {
-        filteredCourses = courses;
-    } else {
-        filteredCourses = courses.filter(course => course.subject === subject);
-    }
+        let filteredCourses;
+        if (subject === 'All') {
+           filteredCourses = courses;
+        } else {
+            filteredCourses = courses.filter(course => course.subject === subject);
+        }
 
+    // Display filtered courses
     displayCourses(filteredCourses);
-}
 
-// Function to display total completed credits
-function displayTotalCredits() {
-    const totalCredits = courses.reduce((acc, course) => {
-        return course.completed ? acc + course.credits : acc;
+    // Calculate and display total credits for the filtered courses
+    const totalCredits = filteredCourses.reduce((total, course) => {
+        return total + course.credits;
     }, 0);
 
-    document.getElementById('totalCredits').textContent = `Total Completed Credits: ${totalCredits}`;
+    document.getElementById('totalCreditsRequired').textContent = `Total Credits: ${totalCredits}`;
 }
 
-// Initial render of all courses and total credits required
+// Initial render of all courses and total credits
 displayCourses(courses);
 calculateTotalCredits();
 displayTotalCredits();

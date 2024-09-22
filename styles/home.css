@@ -56,6 +56,12 @@ body {
     position: relative;
     padding: 5px 0;
   }
+
+  /* Active or current page style */
+  nav a:active {
+   background-color: #005f7f;
+   color: yellow;
+  }
   
   nav a::before {
     content: '';

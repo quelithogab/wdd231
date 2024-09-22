@@ -45,6 +45,12 @@
     display: none;
   }
 
+  /* Active or current page style */
+  nav a:active {
+    background-color: #005f7f;
+    color: yellow;
+   }
+
   /* Hide the nav menu initially */
   nav ul {
     display: none;
