@@ -21,15 +21,16 @@
     
     // JavaScript to dynamically highlight the current navigation item
     document.addEventListener('DOMContentLoaded', () => {
-        const currentPage = window.location.pathname; // Get the current page URL
+        const currentLocation = window.location.href;
         const navLinks = document.querySelectorAll('nav a');
-    
+      
         navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active'); // Add 'active' class to the current page link
-            }
+          if (link.href === currentLocation) {
+            link.classList.add('active');
+          }
         });
     });
+      
   
     
 

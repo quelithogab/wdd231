@@ -58,10 +58,11 @@ body {
   }
 
   /* Active or current page style */
-  nav a:active {
-   background-color: #005f7f;
-   color: yellow;
+  nav a.active {
+    color: steelblue;
+    font-weight: bold;
   }
+  
   
   nav a::before {
     content: '';
