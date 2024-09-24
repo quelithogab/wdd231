@@ -176,4 +176,4 @@ function showCourseDetails(course) {
 // Initial render of all courses and total credits
 displayCourses(courses);
 calculateTotalCredits();
-displayTotalCredits();
+// displayTotalCredits();
