@@ -1,0 +1,23 @@
+{
+    "family_name": "Gariel",
+    "move_in_date": "2024-08-24",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+      {
+        "name": "Quelitho Gabriel",
+        "gender": "Male",
+        "birthdate": "2021-11-27"
+      },
+      {
+        "name": "Angel D. Gabriel",
+        "gender": "Female",
+        "birthdate": "2021-11-27"
+      },
+      {
+        "name": "Peter Gabrel",
+        "gender": "Male",
+        "birthdate": "2024-06-28"
+      }
+    ]
+}

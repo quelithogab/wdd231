@@ -177,3 +177,5 @@ function showCourseDetails(course) {
 displayCourses(courses);
 calculateTotalCredits();
 // displayTotalCredits();
+
+// 
