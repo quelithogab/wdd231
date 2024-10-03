@@ -3,44 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Port-Au-Prince, Haiti Chamber Of Commerce</title>
-    <meta name="description" content="This websiteis a chamber of commerce, it contains informations to promote the country and business interests of people">
+    <title>Chamber of Commerce Directory</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I">
     <meta name="author" content="Quelitho Gabriel">
     <!-- Open Graph meta tags -->
-    <meta property = "og:title" content="Welcome to our chamber of commerce, Port-Au-Prince, Haiti">
+    <meta property = "og:title" content="Welcome to My Course Home Page">
     <meta property = "og:type" content="website">
-    <meta property = "og:image" content="https://haitibusinessindex.com/wp-content/uploads/2020/07/Centre-de-Facilitation-des-Investissements-CFI-Port-au-Prince.jpg">
-    <meta property = "og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
-  
+    <meta property = "og:image" content="https://qcdc.org.qa/wp-content/uploads/2020/09/Online-courses-scaled.jpg">
+    <meta property = "og:url" content="https://quelithogab.github.io/wdd231/">
+
     <!-- Google Font preconnect links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
-    <script src="scripts/home.js" defer></script>
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script defer src="scripts/chamber.js"></script>
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="images/profile.jpeg" alt="Quelitho Gabriel">
-            <h1>Quelitho Gabriel</h1>
-            <button class="menu-toggle" aria-label="Toggle menu">
-              <span class="hamburger">&#9776;</span>
-              <span class="close">&times;</span>
-            </button>
-        </div> 
-        
-        <nav>
-          <ul>
-            <li><a href="index.html" id="home" target="_blank">Home</a></li>
-            <li><a href="#" id="chamber" target="_blank">Chamber</a></li>
-            <li><a href="##" id="github" target="_blank">GitHub Profile</a></li>
-            <li><a href="https://www.linkedin.com/in/quelitho-gabriel-108018223/" id="linkedin" target="_blank">LinkedIn</a></li>
-          </ul>
-        </nav>
-        
-      </header>
+
+<header>
+    <div class="profile">
+        <img src="images/profile.jpeg" alt="Quelitho Gabriel">
+        <h1>Haiti</h1>
+        <h4>Chamber Of Commerce</h4>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="hamburger">&#9776;</span>
+          <span class="close">&times;</span>
+        </button>
+    </div> 
+    
+    <nav>
+      <ul>
+        <li><a href="index.html" id="home" target="_blank">Home</a></li>
+        <li><a href="#" id="directory" target="_blank">Directory</a></li>
+        <li><a href="##" id="join" target="_blank">Join</a></li>
+        <li><a href="##" id="discover" target="_blank">Discover</a></li>
+        <!-- <li><a href="https://www.linkedin.com/in/quelitho-gabriel-108018223/" id="linkedin" target="_blank">LinkedIn</a></li> -->
+      </ul>
+    </nav>
+  
+</header>
+
+<main>
+    <div>
+        <button id="grid-view">Grid View</button>
+        <button id="list-view">List View</button>
+
+    </div>
+    <section id="members-container" class="grid-view"></section>
+</main>
+
+<footer>
+  
+</footer>
+
+
 </body>
 </html>

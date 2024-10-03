@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  font-family: var(--paragraph-font);
+  background-color: #005f7f;
+  color: white;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.profile img {
+  height: 90px;
+  width: 80px;
+  padding: 20px;
+}
+
+.profile h4 {
+  margin-top: 80px;
+  margin-left: -70px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+nav ul{
+  font-family: var(--heading-font);
+  padding: 0.5rem;
+  display: flex;
+  /* align-items: center; */
+  list-style: none;
+  margin: 80px 0 0 550px;
+}
+
+nav a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav a.active {
+  color: steelblue;
+  font-weight: bold;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: steelblue;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+main button {
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Container for members */
+#members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Member card styles */
+.member {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.member img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.member h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.member p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.member a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.member a:hover {
+  text-decoration: underline;
+}
+
+/* Grid View */
+.grid-view .member {
+  width: 250px;
+  flex-basis: 25%;
+}
+
+/* List View */
+.list-view {
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-view .member {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 10px;
+}
+
+.list-view .member img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.list-view .member h2 {
+  font-size: 1.2rem;
+}
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .grid-view .member {
+      flex-basis: 45%;
+  }
+
+  .list-view .member {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .list-view .member img {
+      margin: 0 0 10px 0;
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-view .member {
+      flex-basis: 100%;
+  }
+}

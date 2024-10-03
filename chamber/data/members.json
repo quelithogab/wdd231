@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Natcom",
+        "address": "Ave M.L.K. Jr., Port-au-Prince",
+        "phone": "22 22 8888",
+        "website": "https://natcom.com.ht/",
+        "image": "images/natcom.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Digicel",
+        "address": "151 Angle Avenue Jean Paul II et, Impasse Duverger, Port-au-Prince",
+        "phone": "47 49 6188",
+        "website": "https://www.digicelgroup.com/ht/en",
+        "image": "images/digicel.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "PAP Securite",
+        "address": "4, Impasse Chevalier, Delmas 52",
+        "phone": "29 42 1114",
+        "website": "https://papsecurite.com/",
+        "image": "images/papsecurite.jpeg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Karyna",
+        "address": " Boisrond Canal, Port-au-Prince",
+        "phone": " 28 16 0373",
+        "website": "http://karynasa.com",
+        "image": "images/karynasa.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Pâtisserie Marie Beliard",
+        "address": "9 Faubert, Petion-Ville",
+        "phone": "28 13 1515",
+        "website": "https://patisseriemariebeliard.com/",
+        "image": "images/mariebeliard.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Interieur Chic",
+        "address": "60, rue Chavannes, M Plaza , Pétion-Ville",
+        "phone": "34 45 4444",
+        "website": "http://www.pagespro.ht/en/company/381-interieur-chic",
+        "image": "images/interieurchic.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Matelec",
+        "address": "75 Rebecca, Port-au-Prince",
+        "phone": "48 75 3103",
+        "website": "http://nextgen.com",
+        "image": "images/matelec.jpg",
+        "membershipLevel": 2
+    }
+]
