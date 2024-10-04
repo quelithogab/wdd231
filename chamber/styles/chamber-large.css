@@ -59,6 +59,14 @@
     margin-right: 10px;
    }
 
+   .list-view .member {
+    display: block;
+    text-align: center;
+    
+   }
+
+   
+
 
 
     .footer-info {
@@ -116,6 +124,7 @@
   #dark-mode-toggle:hover {
     color: yellow;
   }
+  
     
     .footer-info {
       flex-direction: column;
