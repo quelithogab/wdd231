@@ -79,7 +79,7 @@
   /* Media Query for Mobile Devices */
   @media screen and (max-width: 480px) {
     header {
-        padding: 10px;
+      padding: 10px;
     }
 
     nav ul a {
@@ -89,17 +89,33 @@
     }
   
     .profile img {
-        height: 60px;
-        width: 60px;
+      height: 60px;
+      width: 60px;
     }
   
     .menu-toggle {
-        font-size: 1.8rem;
+      font-size: 1.8rem;
     }
   
     nav ul a {
-        padding: 12px;
+      padding: 12px;
     }
+
+    
+
+    /* Toggle button styles */
+  #dark-mode-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  #dark-mode-toggle:hover {
+    color: yellow;
+  }
     
     .footer-info {
       flex-direction: column;
