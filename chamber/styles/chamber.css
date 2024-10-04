@@ -10,16 +10,17 @@ body {
 
 header {
   display: flex;
+  justify-content: space-between;
   font-family: var(--paragraph-font);
   background-color: #005f7f;
   color: white;
   text-align: center;
+  padding: 10px 20px;
 }
 
 .profile {
   display: flex;
   align-items: center;
-  margin-left: 50px;
 }
 
 .profile img {
@@ -35,13 +36,21 @@ header {
 
 .menu-toggle {
   display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu-toggle .close {
+  display: none;
 }
 
 nav ul{
   font-family: var(--heading-font);
-  padding: 0.5rem;
+  gap: 20px;
   display: flex;
-  /* align-items: center; */
   list-style: none;
   margin: 80px 0 0 550px;
 }
@@ -54,31 +63,61 @@ nav a {
   padding: 5px 0;
 }
 
-nav a.active {
-  color: steelblue;
-  font-weight: bold;
+#dark-mode-toggle {
+  margin-top: 65px;
 }
 
-nav a::before {
+
+/* Optional: Add an underline or a border to the active link */
+nav ul a.active::before {
   content: '';
   position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background-color: steelblue;
-  transition: all 0.2s ease-in-out;
-}
-
-nav a:hover::before {
   width: 100%;
+  height: 2px;
+  bottom: -5px;
   left: 0;
+  background-color: steelblue;
+  transition: width 0.3s;
 }
 
-main button {
-  margin: 5px;
-  padding: 5px;
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #2b2b2b;
+  color: #e0e0e0;
 }
+
+header.dark-mode {
+  background-color: #1f1f1f;
+}
+
+nav a.dark-mode {
+  color: #e0e0e0;
+}
+
+footer.dark-mode {
+  background-color: #1f1f1f;
+}
+
+/* Toggle button styles */
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#dark-mode-toggle:hover {
+  color: yellow;
+}
+
+.view {
+  text-align: center;
+  margin: 15px;
+
+}
+
 
 /* Container for members */
 #members-container {
@@ -157,29 +196,48 @@ main button {
   font-size: 1.2rem;
 }
 
-
-
-
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .grid-view .member {
-      flex-basis: 45%;
-  }
-
-  .list-view .member {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .list-view .member img {
-      margin: 0 0 10px 0;
-      width: 100%;
-  }
+/* Footer Styles */
+footer {
+  background-color: #005f7f;
+  color: white;
+  padding: 20px 0;
 }
 
-@media screen and (max-width: 480px) {
-  .grid-view .member {
-      flex-basis: 100%;
-  }
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
+.footer-left,
+.footer-right {
+  text-align: left;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+
+.social-icons {
+display: flex;
+gap: 15px;
+}
+
+.social-icons a img {
+width: 30px;
+height: 30px;
+}
+
+#lastModified {
+  font-size: 0.8rem;
+}
+
+
+
+

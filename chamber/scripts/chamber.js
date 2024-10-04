@@ -3,6 +3,47 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('currentyear').textContent = new Date().getFullYear();
     document.getElementById('lastModified').textContent = "Last Modification: " + document.lastModified;
 
+    const navItems = document.querySelectorAll('.nav-item'); // Select all nav items
+
+    navItems.forEach(item => {
+        if (window.location.href.includes(item.getAttribute('href'))) {
+            item.classList.add('active'); // Add the active class to the current link
+        }
+    });
+
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        toggleButton.classList.toggle('active');
+    });
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    // Check for saved user preference in localStorage
+    const darkMode = localStorage.getItem('darkMode');
+
+    // If dark mode was previously enabled, set it when page loads
+    if (darkMode === 'enabled') {
+        body.classList.add('dark-mode');
+    }
+
+    // Toggle dark mode on button click
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        // Save the user's preference in localStorage
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+
+    
+
     const membersContainer = document.getElementById("members-container");
     const gridViewButton = document.getElementById("grid-view");
     const listViewButton = document.getElementById("list-view");
