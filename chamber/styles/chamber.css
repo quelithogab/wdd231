@@ -8,6 +8,14 @@ body {
   background-color: #f4f4f4;
 }
 
+:root {
+  --primary-color: #b22222;
+  --secondary-color: darkgreen;
+  --text-color: black;
+  --background-color: steelblue;
+  --opacity-level: 0.8;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -113,6 +121,193 @@ nav ul a.active::before {
   margin: 15px;
 
 }
+
+.container {
+  width: 75%;
+  margin-left: 165px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+/* Home Css */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  width: 75%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #005f7f;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+main h1 {
+  margin-left: 175px;
+}
+
+.dark-mode main h1 {
+  color: white;
+}
+
+.event-weather-container {
+  width: 77%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin-left: 155px;
+}
+
+.event-weather-container h2 {
+  background-color: #333;
+  color: white;
+}
+
+/* Events Section */
+.events {
+  height: 300px;
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+}
+
+.events h2 {
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+}
+
+/* Current Weather Section */
+.current-weather {
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin: 15px;
+  height: 300px;
+  text-align: center;
+}
+
+.current-weather h2 {
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+}
+
+#temp {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: bold;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: -25px 130px -45px 5px;
+}
+
+#weather-description {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.current-weather ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+
+/* Weather Forecast Section */
+.weather-forecast {
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin: 15px;
+  height: 300px;
+  text-align: center;
+}
+
+.weather-forecast h2 {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.weather-forecast ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.weather-forecast li {
+  margin: 10px 0;
+  
+}
+
+
+/* Spotlight Section */
+.spotlight-member {
+  display: block;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 20%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-member img {
+  border-top: 1px solid #000;
+  padding: 10px;
+  width: 80%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.spotlight-member h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.spotlight-member p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.spotlight-member a {
+  display: block;
+  margin-top: 10px;
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.spotlight-member a:hover {
+  text-decoration: underline;
+}
+
+.membership-level {
+  font-weight: bold;
+}
+/* Home css */
 
 
 /* Container for members */
