@@ -142,9 +142,10 @@ nav ul a.active::before {
 
 .hero-text {
   position: absolute;
-  top: 10%;
+  bottom: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .cta-button {
@@ -178,6 +179,8 @@ main h1 {
 .event-weather-container h2 {
   background-color: #333;
   color: white;
+  padding: 10px;
+  margin-top: 0;
 }
 
 /* Events Section */
@@ -189,12 +192,6 @@ main h1 {
   text-align: center;
 }
 
-.events h2 {
-  color: white;
-  padding: 10px;
-  margin-top: 0;
-}
-
 /* Current Weather Section */
 .current-weather {
   background-color: #e0e0e0;
@@ -204,11 +201,6 @@ main h1 {
   text-align: center;
 }
 
-.current-weather h2 {
-  color: white;
-  padding: 10px;
-  margin-top: 0;
-}
 
 #temp {
   font-size: 0.9rem;
@@ -241,13 +233,6 @@ main h1 {
   margin: 15px;
   height: 300px;
   text-align: center;
-}
-
-.weather-forecast h2 {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  margin-top: 0;
 }
 
 .weather-forecast ul {

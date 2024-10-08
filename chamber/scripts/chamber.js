@@ -138,7 +138,7 @@ function displayCurrentWeather(data) {
 
     // Display weather icon (if available)
     const weatherIcon = currentWeather.weather[0].icon;
-    document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
+    document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
 }
 
 function displayWeatherForecast(data) {
@@ -178,8 +178,8 @@ function displaySpotlightMembers(members) {
             <p class="membership-level">${member.membershipLevel === 2 ? 'Silver' : 'Gold'} Member</p>
             <img src="${member.image}" alt="${member.name}">
             <p>${member.address}</p>
-            <p>${member.email}</p>
-            <p>${member.phone}</p>
+            <p><strong>Email:</strong> ${member.email}</p>
+            <p><strong>Phone::</strong> ${member.phone}</p>
             <a href="${member.website}" target="_blank">Visit Website</a>
         `;
 
