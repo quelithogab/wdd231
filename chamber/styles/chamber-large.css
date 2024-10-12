@@ -104,6 +104,12 @@
   /* home media query 768px */
 
 
+  /* Join media query 768px */
+  .container {
+    display: block;
+  }
+  /* Join media query 768px */
+
   .footer-info {
     flex-direction: column;
     text-align: center;
@@ -118,6 +124,8 @@
     margin: 15px 0;
   }
 }
+
+
   
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
@@ -231,4 +239,64 @@
   .footer-right p {
     font-size: 0.8rem; /* Slightly smaller text for mobile */
    }
+}
+
+/* Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 780px) {
+  
+
+  .gratitude {
+    text-align: center;
+  }
+
+  .submission-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  fieldset {
+    width: 70%;
+    margin-left: 70px;
+  }
+
+  .container {
+    width: 70%;
+   
+  }
+
+  .card {
+    width: 80%;
+    margin-left: -15px;
+  }
+
+  
+}
+
+/* Responsive Design for Larger Screens (Desktop and tablets) */
+@media (max-width: 480px) {
+ 
+
+  .gratitude, .submission-details {
+    width: 65%;
+  }
+
+  .gratitude {
+    margin-left: 80px;
+  }
+
+  .submission-details fieldset {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .container {
+    width: 75%;
+    margin-left: 50px;
+  
+  }
+
+  .card {
+    width: 70%;
+    
+  }
 }

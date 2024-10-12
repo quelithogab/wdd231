@@ -126,7 +126,7 @@ nav ul a.active::before {
   width: 75%;
   margin-left: 165px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 /* Home Css */
@@ -371,11 +371,161 @@ main h1 {
   font-size: 1.2rem;
 }
 
+/* Join css */
+/* * {
+  box-sizing: border-box;
+} */
+
+.membership-form, .membership-levels {
+  width: 95%;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.membership-levels h2 {
+  margin-bottom: 45px;
+}
+
+label, input, textarea {
+  display: block;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+ 
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-left: 5px solid black;
+}
+
+form button {
+  width: 40%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+/* Animation */
+/* Fade-in and upward motion animation for membership cards */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start slightly below */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+
+.card {
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #aaa;
+  text-align: center;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 1s ease-out forwards; /* Trigger animation */
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close-btn {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* Join css */
+
+/* Thank You Css */
+.gratitude {
+  text-align: center;
+}
+
+.gratitude h1 {
+  margin-right: 150px;
+
+}
+
+fieldset {
+  margin-left: 330px;
+  width: 650px;
+  background-color: aliceblue;
+}
+
+fieldset p {
+  text-align: center;
+}
+
+.thank-you-message {
+  border-top: 1px solid black;
+  text-align: center;
+  /* font-weight: bold;/ */
+}
+
+/* Thank You Css */
+
+
 /* Footer Styles */
 footer {
   background-color: #005f7f;
   color: white;
   padding: 20px 0;
+  margin-top: 15px;
 }
 
 .footer-info {

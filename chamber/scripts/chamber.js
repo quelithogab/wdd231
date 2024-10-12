@@ -194,3 +194,65 @@ fetch('data/members.json')
         displaySpotlightMembers(members);
     })
     .catch(error => console.error('Error fetching the members:', error));
+
+
+// Set the current timestamp in the hidden field
+document.addEventListener('DOMContentLoaded', () => {
+    const timestamp = document.getElementById('timestamp');
+    timestamp.value = new Date().toLocaleString();
+});
+
+// Modal Functionality
+const modalButtons = document.querySelectorAll('.modal-btn');
+const modals = document.querySelectorAll('.modal');
+const closeButtons = document.querySelectorAll('.close-btn');
+
+modalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-modal');
+        document.getElementById(modalId).style.display = 'flex';
+    });
+});
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.parentElement.parentElement.style.display = 'none';
+    });
+});
+
+window.onclick = (event) => {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+    }
+};
+
+// Thankyou Js
+// Function to get query parameters from the URL
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        firstName: params.get('firstName'),
+        lastName: params.get('lastName'),
+        email: params.get('email'),
+        phone: params.get('phone'),
+        organization: params.get('organization'),
+        timestamp: params.get('timestamp')
+    };
+}
+
+// Function to display the submitted data
+function displaySubmittedData() {
+    const formData = getQueryParams();
+
+    // Populate the spans with the form data
+    document.getElementById('firstName').textContent = formData.firstName || 'N/A';
+    document.getElementById('lastName').textContent = formData.lastName || 'N/A';
+    document.getElementById('email').textContent = formData.email || 'N/A';
+    document.getElementById('phone').textContent = formData.phone || 'N/A';
+    document.getElementById('organization').textContent = formData.organization || 'N/A';
+    document.getElementById('timestamp').textContent = formData.timestamp || 'N/A';
+}
+
+// Call the function to display data when the page loads
+document.addEventListener('DOMContentLoaded', displaySubmittedData);
+

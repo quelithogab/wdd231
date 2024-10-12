@@ -178,4 +178,3 @@ displayCourses(courses);
 calculateTotalCredits();
 // displayTotalCredits();
 
-// 
