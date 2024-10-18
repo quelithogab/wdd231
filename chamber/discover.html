@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Home page</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I">
+    <meta name="author" content="Quelitho Gabriel">
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Welcome to Haiti Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://qcdc.org.qa/wp-content/uploads/2020/09/Online-courses-scaled.jpg">
+    <meta property="og:url" content="https://quelithogab.github.io/wdd231/chamber/">
+
+    <!-- Google Font preconnect links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script src="scripts/chamber.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/haitilogo.jpeg" alt="Haiti">
+            <h1>Haiti</h1>
+            <h4>Chamber Of Commerce</h4> 
+        </div> 
+  
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" id="home" class="nav-item">Home</a></li>
+            <li><a href="directory.html" id="directory" class="nav-item">Directory</a></li>
+            <li><a href="join.html" id="join" class="nav-item">Join</a></li>
+            <li><a href="discover.html" id="discover" class="nav-item">Discover</a></li>
+          </ul>
+        </nav>
+  
+        <div class="mode">
+          <!-- Dark Mode Toggle Button -->
+          <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="hamburger">&#9776;</span>
+            <span class="close">&times;</span>
+          </button>
+        </div>
+
+    </header>
+
+    <main class="grid-container">
+        <aside class="sidebar">
+            <h2>Visitor Information</h2>
+            <p id="visitor-message"></p>
+            <h3>Events</h3>
+            <ul>
+                <li>Annual Haiti Carnival - February </li>
+                <li>Dessalines Day - October 17 </li>
+                <li>Battle of Vertières - November 18</li>
+            </ul>
+            <h3>Calendar</h3>
+            <div id="calendar">
+                <p>December 24, 2024</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Su</th>
+                            <th>Mo</th>
+                            <th>Tu</th>
+                            <th>We</th>
+                            <th>Th</th>
+                            <th>Fr</th>
+                            <th>Sa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+    
+        <section class="gallery">
+            <h2>Local Attractions</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img data-src="images/lakounewyork.jpg" alt="Attraction 1" class="lazy" loading="lazy" />
+                    <p> Sud-Est Lakou New York.</p>
+                </div>
+                <div class="image-item">
+                    <img data-src="images/haiti.jpg" alt="Attraction 2" class="lazy" loading="lazy" />
+                    <p>Beautiful Place Jacmel.</p>
+                </div>
+                <div class="image-item">
+                    <img data-src="images/cotesarcadins.jpg" alt="Attraction 3" class="lazy" loading="lazy" />
+                    <p>Cotes des Arcadins.</p>
+                </div>
+                <div class="image-item">
+                    <img data-src="images/labadee.jpg" alt="Attraction 4" class="lazy" loading="lazy" />
+                    <p>Labadee.</p>
+                </div>
+                <div class="image-item">
+                    <img data-src="images/citadellelaferriere.webp" alt="Attraction 5" class="lazy" loading="lazy" />
+                    <p>Citadelle Laferriere.</p>
+                </div>
+                <div class="image-item">
+                    <img data-src="images/mupanah.jpg" alt="Attraction 6" class="lazy" loading="lazy" />
+                    <p>MUPANAH.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-left">
+              <p>Haiti Chamber of Commerce</p>
+              <p>27 Rue Darguin, Port-Au-Prince, Haitt</p>
+              <p>Email: info@haitipap.org | Phone: (509) 44-19-8829</p>
+            </div>
+            
+            <div class="social-icons">
+              <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="images/instagram-icon.jpeg" alt="Instagram"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+            <div class="footer-right">
+              <p>WDD231 Class Project</p>
+              <p>Quelitho Gabriel</p>
+              <p>&copy; <span id="currentyear"></span> Haiti Chamber of Commerce</p>
+              <p id="lastModified"></p>
+            </div>
+          </div>
+    </footer>
+    
+</body>
+</html>

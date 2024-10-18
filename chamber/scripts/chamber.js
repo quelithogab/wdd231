@@ -256,3 +256,50 @@ function displaySubmittedData() {
 // Call the function to display data when the page loads
 document.addEventListener('DOMContentLoaded', displaySubmittedData);
 
+// Discover JS
+document.addEventListener("DOMContentLoaded", () => {
+    const visitorMessage = document.getElementById("visitor-message");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = Date.now();
+
+    // Calculate the time since the last visit
+    if (!lastVisit) {
+        visitorMessage.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const daysSinceLastVisit = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+        
+        if (daysSinceLastVisit < 1) {
+            visitorMessage.textContent = "Back so soon! Awesome!";
+        } else {
+            visitorMessage.textContent = `You last visited ${daysSinceLastVisit} ${daysSinceLastVisit === 1 ? "day" : "days"} ago.`;
+        }
+    }
+
+    // Update the last visit date
+    localStorage.setItem("lastVisit", now);
+
+    // Lazy loading images
+    const lazyImages = document.querySelectorAll(".lazy");
+    
+    const lazyLoad = (image) => {
+        const src = image.getAttribute("data-src");
+        if (!src) return;
+        image.src = src;
+        image.onload = () => {
+            image.classList.remove("lazy");
+        };
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                lazyLoad(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    lazyImages.forEach(image => {
+        observer.observe(image);
+    });
+});

@@ -110,6 +110,17 @@
   }
   /* Join media query 768px */
 
+  /* Discover Media query 768px */
+  .grid-container {
+    margin-left: 25px;
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr; /* Single column layout for images */
+  }
+  /* Discover Media query 768px */
+
   .footer-info {
     flex-direction: column;
     text-align: center;
@@ -299,4 +310,10 @@
     width: 70%;
     
   }
+
+  /* Discover Media query 768px */
+  .grid-container {
+    margin-left: 5px;
+  }
+  /* Discover Media query 768px */
 }

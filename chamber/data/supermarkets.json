@@ -1,0 +1,155 @@
+{
+    "supermarkets": [
+      {
+        "name": "SuperMart",
+        "address": "123 Main Street, Springfield",
+        "phone": "555-1234",
+        "website": "https://www.supermart.com",
+        "email": "contact@supermart.com",
+        "image": "images/haiti.jpg",
+        "products": [
+          {
+            "name": "Apples",
+            "image": "images/haitilogo.jpeg",
+            "price": "$2.50 per lb"
+          },
+          {
+            "name": "Bananas",
+            "image": "images/bananas.jpg",
+            "price": "$1.20 per lb"
+          },
+          {
+            "name": "Bread",
+            "image": "images/bread.jpg",
+            "price": "$3.00 per loaf"
+          },
+          {
+            "name": "Milk",
+            "image": "images/milk.jpg",
+            "price": "$2.50 per gallon"
+          }
+        ]
+      },
+      {
+        "name": "FreshFoods",
+        "address": "456 Oak Avenue, Lakeside",
+        "phone": "555-5678",
+        "website": "https://www.freshfoods.com",
+        "email": "info@freshfoods.com",
+        "image": "images/freshfoods.jpg",
+        "products": [
+          {
+            "name": "Chicken",
+            "image": "images/chicken.jpg",
+            "price": "$7.99 per lb"
+          },
+          {
+            "name": "Rice",
+            "image": "images/rice.jpg",
+            "price": "$1.50 per lb"
+          },
+          {
+            "name": "Eggs",
+            "image": "images/eggs.jpg",
+            "price": "$3.00 per dozen"
+          },
+          {
+            "name": "Tomatoes",
+            "image": "images/tomatoes.jpg",
+            "price": "$2.00 per lb"
+          }
+        ]
+      },
+      {
+        "name": "GroceryHub",
+        "address": "789 Elm Road, Mountainview",
+        "phone": "555-9876",
+        "website": "https://www.groceryhub.com",
+        "email": "support@groceryhub.com",
+        "image": "images/groceryhub.jpg",
+        "products": [
+          {
+            "name": "Pasta",
+            "image": "images/pasta.jpg",
+            "price": "$1.99 per pack"
+          },
+          {
+            "name": "Cheese",
+            "image": "images/cheese.jpg",
+            "price": "$4.50 per lb"
+          },
+          {
+            "name": "Yogurt",
+            "image": "images/yogurt.jpg",
+            "price": "$1.25 per cup"
+          },
+          {
+            "name": "Juice",
+            "image": "images/juice.jpg",
+            "price": "$3.50 per bottle"
+          }
+        ]
+      },
+      {
+        "name": "EcoMarket",
+        "address": "321 Pine Street, Riverside",
+        "phone": "555-4321",
+        "website": "https://www.ecomarket.com",
+        "email": "hello@ecomarket.com",
+        "image": "images/ecomarket.jpg",
+        "products": [
+          {
+            "name": "Almonds",
+            "image": "images/almonds.jpg",
+            "price": "$10.99 per lb"
+          },
+          {
+            "name": "Quinoa",
+            "image": "images/quinoa.jpg",
+            "price": "$5.00 per lb"
+          },
+          {
+            "name": "Coconut Oil",
+            "image": "images/coconut-oil.jpg",
+            "price": "$7.50 per jar"
+          },
+          {
+            "name": "Green Tea",
+            "image": "images/green-tea.jpg",
+            "price": "$3.99 per box"
+          }
+        ]
+      },
+      {
+        "name": "HealthyShop",
+        "address": "654 Birch Road, Forest Town",
+        "phone": "555-8765",
+        "website": "https://www.healthyshop.com",
+        "email": "contact@healthyshop.com",
+        "image": "images/healthyshop.jpg",
+        "products": [
+          {
+            "name": "Spinach",
+            "image": "images/spinach.jpg",
+            "price": "$3.00 per bunch"
+          },
+          {
+            "name": "Avocados",
+            "image": "images/avocados.jpg",
+            "price": "$2.50 each"
+          },
+          {
+            "name": "Oats",
+            "image": "images/oats.jpg",
+            "price": "$4.00 per lb"
+          },
+          {
+            "name": "Honey",
+            "image": "images/honey.jpg",
+            "price": "$8.00 per jar"
+          }
+        ]
+      }
+    ]
+  }
+  

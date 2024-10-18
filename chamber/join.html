@@ -61,7 +61,7 @@
             <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required>
 
             <label for="title">Title</label>
-            <input type="text" id="title" name="title" title="Title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}" required>
+            <input type="text" id="title" name="title" title="Title" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" required>
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@mail.com" required>
