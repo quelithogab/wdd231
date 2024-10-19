@@ -55,17 +55,18 @@ header {
   display: none;
 }
 
+
 nav ul{
   font-family: var(--heading-font);
   gap: 20px;
   display: flex;
   list-style: none;
-  margin: 80px 0 0 550px;
+  margin: 80px 0 0 230px;
 }
 
 nav a {
   color: white;
-  margin: 0 5px;
+  /* margin: 0 5px; */
   text-decoration: none;
   position: relative;
   padding: 5px 0;
