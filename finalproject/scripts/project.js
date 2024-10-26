@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const city = 'Haiti'; // Replace with your city name
     const weatherApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
 
-    fetchWeatherData();
-   
+        fetchWeatherData();
 
     function fetchWeatherData() {
         fetch(weatherApiUrl)
