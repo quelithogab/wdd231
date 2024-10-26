@@ -9,7 +9,7 @@ body {
     --primary-color: #b22222;
     --secondary-color: darkgreen;
     --text-color: black;
-    --background-color: steelblue;
+    --background-color: #eeeeee;
     --opacity-level: 0.8;
 }
   
@@ -17,8 +17,8 @@ header {
     display: flex;
     justify-content: space-between;
     font-family: var(--paragraph-font);
-    background-color: #005f7f;
-    color: white;
+    background-color: var(--background-color);
+    color: black;
     text-align: center;
     padding: 10px 20px;
 }
@@ -48,7 +48,7 @@ header h1 {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: blue;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -67,7 +67,7 @@ nav ul{
 }
   
 nav a {
-    color: white;
+    color: black;
     /* margin: 0 5px; */
     text-decoration: none;
     position: relative;
@@ -109,7 +109,7 @@ nav ul a.active::before {
 #dark-mode-toggle {
     background: none;
     border: none;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     cursor: pointer;
     margin-right: 20px;
@@ -398,8 +398,8 @@ h3 {
 
 /* Footer Styles */
 footer {
-    background-color: #005f7f;
-    color: white;
+    background-color: var(--background-color);
+    color: black;
     padding: 20px 0;
     margin-top: 15px;
   }
