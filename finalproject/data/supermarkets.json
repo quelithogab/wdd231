@@ -56,17 +56,17 @@
           {
             "name": "Chicken Drumsticks 1lb",
             "price": "$6.00",
-            "image": "images/chicken.jpg"
+            "image": "images/chicken.jpeg"
           },
           {
             "name": "Ground Beef 1lb",
             "price": "$7.50",
-            "image": "images/ground-beef.jpg"
+            "image": "images/ground-beef.webp"
           },
           {
             "name": "Cheddar Cheese 1lb",
             "price": "$9.00",
-            "image": "images/cheese.jpg"
+            "image": "images/cheese.webp"
           },
           {
             "name": "Fresh Bread",
@@ -86,7 +86,7 @@
           {
             "name": "Orange Juice 1L",
             "price": "$4.00",
-            "image": "images/orange-juice.jpg"
+            "image": "images/orange-juice.webp"
           }
         ]
       },
@@ -106,12 +106,12 @@
           {
             "name": "Tomato Paste 8oz",
             "price": "$1.50",
-            "image": "images/tomato-paste.jpg"
+            "image": "images/tomato-paste.avif"
           },
           {
             "name": "Corn Meal 5lb",
             "price": "$5.50",
-            "image": "images/corn-meal.jpg"
+            "image": "images/corn-meal.jpeg"
           },
           {
             "name": "Salt 2lb",
@@ -121,12 +121,12 @@
           {
             "name": "Eggs (Dozen)",
             "price": "$4.50",
-            "image": "images/eggs.jpg"
+            "image": "images/eggs.jpeg"
           },
           {
             "name": "Apple Juice 1L",
             "price": "$3.75",
-            "image": "images/apple-juice.jpg"
+            "image": "images/apple-juice.jpeg"
           },
           {
             "name": "Butter 500g",
@@ -146,17 +146,17 @@
           {
             "name": "Yogurt 500g",
             "price": "$3.50",
-            "image": "images/yogurt.jpg"
+            "image": "images/yogurt.jpeg"
           },
           {
             "name": "Bananas (5pcs)",
             "price": "$2.50",
-            "image": "images/bananas.jpg"
+            "image": "images/bananas.webp"
           },
           {
             "name": "Peanut Butter 500g",
             "price": "$6.00",
-            "image": "images/peanut-butter.jpg"
+            "image": "images/peanut-butter.jpeg"
           },
           {
             "name": "Chips 250g",

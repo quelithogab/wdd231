@@ -110,6 +110,28 @@
     
   }
 
+  fieldset {
+    padding: 15px;
+    margin: 8px 0;
+    font-size: 0.9em; /* Reduce font size for readability */
+  }
+
+/* Adjust input, label, or other elements within the fieldset if needed */
+  fieldset input,
+  fieldset label {
+    width: 90%;
+    margin-top: 5px;
+  }
+
+  /* Additional styling for buttons within fieldsets */
+  fieldset button {
+    width: 40%;
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  
+
 }
 
 @media screen and (max-width: 900px) {
@@ -143,24 +165,25 @@
     
   }
 
-  .membership-form {
-    display: flex;
-    max-width: 900px;
-    margin-left: -150px;
-  }
+  
 
 }
   
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
+  .profile img {
+    width: 200px;
+    height: 200px;
+  }
     /* header {
       padding: 10px;
     } */
 
     header h1 {
-      font-size: 19px;
-      margin-right: 70px;
+      font-size: 18px;
+      margin-top: 50px;
+      /* margin-right: 70px; */
     }
 
     header h4 {
@@ -169,7 +192,7 @@
 
   
     .profile h4 {
-      margin-top: 95px;
+      /* margin-top: 95px; */
       margin-left: -100px;
     }
   
@@ -242,12 +265,46 @@
       margin: 10px 0;
       display: block;
     }
+
+    
   
     #weather-icon {
       width: 70px;
       height: 70px;
       margin: -25px 130px -45px 5px;
     }
+
+
+    fieldset {
+      width: 310px;
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 0.85em; /* Further reduced font size */
+      border-width: 1.5px; /* Slightly thinner border */
+    }
+
+    fieldset input,
+    fieldset label {
+        width: 75%;
+        font-size: 0.9em;
+    }
+
+    fieldset button {
+        width: 30%;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    
+
+    /* Membership Form */
+    /* .membership-for fieldset {
+      width: 500px;
+    } */
+
+    
+
+    
 
   
     .footer-info {

@@ -102,9 +102,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch the JSON from the data folder
     fetch('data/supermarkets.json')
+
         .then(response => response.json())
         .then(data => displaySupermarkets(data.supermarkets))
         .catch(error => console.error('Error loading JSON:', error));
+
 
     function displaySupermarkets(supermarkets) {
         const supermarketList = document.getElementById('supermarketList');
@@ -115,16 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
             supermarketItem.className = 'supermarket-item';
             supermarketItem.innerHTML = `
                 <strong>${supermarket.name}</strong><br>
-                <img src="${supermarket.image}" alt="${supermarket.name}" class="supermarket-image"><br>
+                <img src="${supermarket.image}" alt="${supermarket.name}" class="supermarket-image" loading="lazy"><br>
                 <strong>Address: </strong>${supermarket.address}<br>
                 <strong>Phone: </strong>${supermarket.phone}<br>
-                <strong>Website: </strong><a href="${supermarket.website}" target="_blank">Visite Website</a><br>
+                <strong>Website: </strong><a href="${supermarket.website}" target="_blank">Visit Website</a><br>
                 <strong>Email: </strong><a href="mailto:${supermarket.email}">${supermarket.email}</a>
             `;
 
             supermarketList.appendChild(supermarketItem);
         });
     }
+
 
 
         // Remove any existing product details
@@ -142,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${supermarket.products.map(product => `
                     <li>
                         <strong>${product.name}</strong><br>
-                        <img src="${product.image}" alt="${product.name}" style="width:100px; height:auto;"><br>
+                        <img src="${product.image}" alt="${product.name}" style="width:150px; height:auto;" loading="lazy"><br>
                         Price: ${product.price}<br>
                     </li>
                 `).join('')}
