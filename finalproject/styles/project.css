@@ -151,10 +151,6 @@ nav ul a.active::before {
     background-color: #0056b3;
 }
 
-/* main{
-    width: 78%;
-    margin-left: 100px;
-} */
   
 main h1 {
     margin-left: 175px;
@@ -193,13 +189,11 @@ main h2 {
 
 
 
-/* Happy Clients */
 /* Happy Clients Section Styles */
 .happy-clients {
     width: 78%;
     margin-left: 140px;
     padding: 10px;
-    /* background-color: #f9f9f9; */
     text-align: center;
 }
 
