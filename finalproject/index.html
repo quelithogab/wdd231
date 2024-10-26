@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Directory</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/thorielogo.png" alt="Thorie Logo">
+            <h1>Thorie Smart Shopper</h1>
+            <h4>Browse & Buy</h4> 
+        </div> 
+  
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" id="home" class="nav-item">Home</a></li>
+            <li><a href="directory.html" id="directory" class="nav-item">SuperMarkets</a></li>
+            <li><a href="about.html" id="discover" class="nav-item">About Us</a></li>
+            <li><a href="join.html" id="join" class="nav-item">Join Us</a></li>
+          </ul>
+        </nav>
+  
+        <div class="mode">
+          <!-- Dark Mode Toggle Button -->
+          <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="hamburger">&#9776;</span>
+            <span class="close">&times;</span>
+          </button>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/thorieshopper.jpg" alt="Hero Image" class="hero-img">
+            <div class="hero-text">
+              <a href="join.html" class="cta-button">Join Us</a>
+            </div>
+        </section>
+        <h1>Home</h1>
+
+        <!-- Happy Clients Section -->
+        <section class="happy-clients">
+            <h2>Happy Clients</h2>
+            <div class="clients-grid">
+                <!-- Client 1 -->
+                <div class="client-item">
+                    <img src="images/happy-client1.jpg" alt="Client 1" class="client-image">
+                    <h3>Marie Jean</h3>
+                    <p><strong>Ordered Products:</strong></p>
+                    <ul>
+                        <li>Organic Bananas - $5.99</li>
+                        <li>Almond Milk - $4.50</li>
+                        <li>Fresh Strawberries - $6.00</li>
+                    </ul>
+                </div>
+                <!-- Client 2 -->
+                <div class="client-item">
+                    <img src="images/happy-client2.jpg" alt="Client 2" class="client-image">
+                    <h3>Pierre Louis</h3>
+                    <p><strong>Ordered Products:</strong></p>
+                    <ul>
+                        <li>Whole Wheat Bread - $3.20</li>
+                        <li>Greek Yogurt - $7.99</li>
+                        <li>Free-range Eggs - $4.25</li>
+                    </ul>
+                </div>
+                <!-- Client 3 -->
+                <div class="client-item">
+                    <img src="images/happy-client3.jpg" alt="Client 3" class="client-image">
+                    <h3>Rachel Pierre</h3>
+                    <p><strong>Ordered Products:</strong></p>
+                    <ul>
+                        <li>Quinoa - $8.99</li>
+                        <li>Blueberries - $5.50</li>
+                        <li>Coconut Water - $3.75</li>
+                    </ul>
+                </div>
+                <!-- Client 4 -->
+                <div class="client-item">
+                    <img src="images/happy-client4.jpg" alt="Client 4" class="client-image">
+                    <h3>Jean Baptiste</h3>
+                    <p><strong>Ordered Products:</strong></p>
+                    <ul>
+                        <li>Chicken Breast - $10.50</li>
+                        <li>Sweet Potatoes - $3.99</li>
+                        <li>Avocados - $6.99</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <Section class="event-weather-container">
+            <section class="weather">
+                <div class="current-weather">
+                  <h2>Current Weather</h2>
+                    <div class="weather-info">
+                        <img src="images/weather.svg" id="weather-icon" alt="Weather Icon">
+                        <p id="temp">--°F</p>
+                        <p id="weather-description">Loading...</p>
+                        <ul>
+                            <li><strong>High:</strong> <span id="high">--°F</span></li>
+                            <li><strong>Low:</strong> <span id="low">--°F</span></li>
+                            <li><strong>Humidity:</strong> <span id="humidity">--%</span></li>
+                            <li><strong>Sunrise:</strong> <span id="sunrise">--:-- AM</span></li>
+                            <li><strong>Sunset:</strong> <span id="sunset">--:-- PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+              <div class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <ul>
+                    <li>Today: <span id="forecast-today">--°F</span></li>
+                    <li>Tomorrow: <span id="forecast-wed">--°F</span></li>
+                    <li>After Tomorrow: <span id="forecast-thu">--°F</span></li>
+                </ul>
+              </div>
+            </section>
+            <section class="events">
+                <h2>Events</h2>
+                <div id="events-placeholder">
+                    <p>No events available at the moment.</p>
+                </div>
+            </section>
+        </Section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-left">
+              <p>Thorie Smart Shopper</p>
+              <p>27 Rue Assad, Port-Au-Prince, Haiti</p>
+              <p>Email: info@thorieshopper.org | Phone: (509) 44-19-8829</p>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="images/instagram-icon.jpeg" alt="Instagram"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+            
+            <div class="footer-right">
+              <p>Final Project</p>
+              <p>Quelitho Gabriel</p>
+              <p id="lastModified"></p>
+              <p>&copy; <span id="currentyear"></span> Thorie Smart Shopper. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

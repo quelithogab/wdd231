@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Directory</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="profile">
+            <img src="images/thorielogo.png" alt="Thorie Logo">
+            <h1>Thorie Smart Shopper</h1>
+            <h4>Browse & Buy</h4> 
+        </div> 
+  
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" id="home" class="nav-item">Home</a></li>
+            <li><a href="directory.html" id="directory" class="nav-item">SuperMarkets</a></li>
+            <li><a href="about.html" id="discover" class="nav-item">About Us</a></li>
+            <li><a href="join.html" id="join" class="nav-item">Join Us</a></li>
+          </ul>
+        </nav>
+  
+        <div class="mode">
+          <!-- Dark Mode Toggle Button -->
+          <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="hamburger">&#9776;</span>
+            <span class="close">&times;</span>
+          </button>
+        </div>
+        
+    </header>
+
+    <main>
+        <h1>Supermarket Directory</h1>
+        <div class="supermarket-list" id="supermarketList">
+            <!-- Supermarkets will be dynamically added here -->
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <div class="footer-left">
+          <p>Thorie Smart Shopper</p>
+          <p>27 Rue Assad, Port-Au-Prince, Haiti</p>
+          <p>Email: info@thorieshopper.org | Phone: (509) 44-19-8829</p>
+        </div>
+        
+        <div class="social-icons">
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="images/instagram-icon.jpeg" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        </div>
+        
+        <div class="footer-right">
+          <p>Final Project</p>
+          <p>Quelitho Gabriel</p>
+          <p id="lastModified"></p>
+          <p>&copy; <span id="currentyear"></span> Thorie Smart Shopper. All rights reserved.</p>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>
