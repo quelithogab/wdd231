@@ -113,6 +113,29 @@
 }
 
 @media screen and (max-width: 900px) {
+
+  /* Header */
+  header h1 {
+    font-size: 29px;
+  }
+
+  header h4 {
+    /* padding-top: 25px; */
+    font-size: 12px;
+  }
+
+  nav ul a {
+    margin-left: -5px;
+  }
+
+   /* Happy Client */
+   .happy-clients {
+    margin-left: 90px;
+    
+  }
+
+
+
    /* media query About Us */
   .about {
     display: block;
@@ -131,9 +154,19 @@
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
-    header {
+    /* header {
       padding: 10px;
+    } */
+
+    header h1 {
+      font-size: 19px;
+      margin-right: 70px;
     }
+
+    header h4 {
+      margin-right: 190px;
+    }
+
   
     .profile h4 {
       margin-top: 95px;
@@ -195,6 +228,15 @@
     main h1 {
       margin: 10px 15px;
     }
+
+      /* Happy Client */
+    .happy-clients {
+      margin-left: 25px;
+    
+    }
+
+   
+    /* Happy Client */
     .event-weather-container {
       width: 100%;
       margin: 10px 0;
@@ -207,15 +249,6 @@
       margin: -25px 130px -45px 5px;
     }
 
-
-
-   
-    /* .spotlight-member {
-      width: 100%;
-      margin: 10px 0;
-    } */
-    /* home media query 480px*/
-  
   
     .footer-info {
       flex-direction: column;
@@ -245,3 +278,9 @@
       font-size: 0.8rem; /* Slightly smaller text for mobile */
      }
 }
+
+/* @media screen and (max-width: 570px) {
+  header h1, h4 {
+    font-size: medium;
+  }
+} */
